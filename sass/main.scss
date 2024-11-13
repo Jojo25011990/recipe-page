@@ -1,0 +1,6 @@
+@forward "./reset";
+@use "./abstract" as *;
+
+body {
+	background-color: $bg-color;
+}
