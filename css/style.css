@@ -120,7 +120,7 @@ body {
     width: 61.6rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   .recipe {
     width: 37.5rem;
     max-width: 100%;
