@@ -1,0 +1,16 @@
+@mixin font-settings($size, $weight: normal, $style: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}

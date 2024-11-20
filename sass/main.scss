@@ -1,6 +1,210 @@
 @forward "./reset";
 @use "./abstract" as *;
 
+// *** global settings ***
+
 body {
+	width: 100%;
+	color: $global-color;
 	background-color: $bg-color;
+	padding: 4.8rem 12.8rem;
+
+	@include font-settings(1.6rem, normal, normal);
+	font-family: $font-family-outfit;
+
+	@media (max-width: 1000px) {
+		padding: 0;
+	}
 }
+
+// *** End of global settings ***
+
+// *** Recipe  ***
+.recipe {
+	width: 73.6rem;
+	background-color: $bg-recipe-color;
+	padding: 4rem;
+	margin: 0 auto;
+	@include border-radius(2.4rem);
+
+	&__line {
+		border: 0.1rem solid $recipe-hr-line;
+	}
+
+	@media (max-width: 800px) {
+		width: 61.6rem;
+	}
+
+	@media (max-width: 450px) {
+		width: 37.5rem;
+		max-width: 100%;
+
+		padding: 0;
+
+		&__content {
+			padding: 0 4rem; // Nastavíme padding len na sekcie
+		}
+	}
+
+	@media (max-width: 375px) {
+		margin: 0;
+	}
+
+	// *** Header  ***
+	&__header {
+		&-img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+
+			@include border-radius(1.2rem);
+		}
+	}
+	// *** End of Header  ***
+
+	// *** Main  ***
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+	}
+
+	&__title {
+		color: $main-heading-color;
+
+		@include font-settings(4rem);
+		font-family: $font-family-young-serif;
+
+		letter-spacing: 0.1rem;
+
+		@media (max-width: 450px) {
+			@include font-settings(3rem);
+		}
+	}
+
+	&__description {
+		line-height: 150%;
+	}
+	// *** End of Main  ***
+
+	// *** Preparation ***
+	&__preparation {
+		background-color: $bg-prep-time-color;
+		padding: 2.4rem;
+		@include border-radius(1.2rem);
+
+		&-title {
+			color: $heading-prep-time-color;
+
+			font: {
+				size: 2rem;
+				weight: 600;
+			}
+
+			letter-spacing: 0.1rem;
+		}
+
+		&-time {
+			display: flex;
+			flex-direction: column;
+			gap: 0.8rem;
+			list-style: unset;
+			margin-left: 1.7rem;
+		}
+
+		&-item {
+			padding-left: 1.6rem;
+			line-height: 150%;
+		}
+	}
+	// *** End of Preparation ***
+
+	// *** Ingredients ***
+	&__ingredients {
+		@extend %sectionStyles;
+
+		&-title {
+			color: $sub-heading-color;
+
+			@include font-settings(2.8rem);
+			font-family: $font-family-young-serif;
+
+			letter-spacing: 0.1rem;
+		}
+
+		&-list {
+			@extend .recipe__preparation-time;
+			padding-left: 0.8rem;
+		}
+
+		&-item {
+			@extend .recipe__preparation-item;
+		}
+	}
+	// *** End of Ingredients ***
+
+	// *** Instructions ***
+
+	&__instructions {
+		@extend %sectionStyles;
+
+		&-title {
+			@extend .recipe__ingredients-title;
+		}
+
+		&-list {
+			@extend .recipe__preparation-time;
+			padding-left: 0.8rem;
+			list-style: auto;
+		}
+
+		&-item {
+			@extend .recipe__preparation-item;
+
+			&::marker {
+				color: $sub-heading-color;
+				font-weight: bold;
+			}
+		}
+	}
+	// *** End of Instructions ***
+
+	// *** Nutrition ***
+	&__nutrition {
+		@extend %sectionStyles;
+
+		&-title {
+			@extend .recipe__ingredients-title;
+		}
+
+		&-description {
+			line-height: 150%;
+		}
+
+		&-table {
+			width: 100%;
+		}
+
+		&-row {
+			margin-right: 1.6rem;
+			border-bottom: 0.2rem solid $recipe-hr-line;
+		}
+
+		&-cell {
+			padding: 1rem 3.2rem;
+
+			&--padding {
+				padding-right: 5.3rem;
+			}
+
+			&--strong {
+				font-weight: bold;
+				color: $heading-prep-time-color;
+			}
+		}
+	}
+	// *** End of Nutrition ***
+}
+
+// *** End of Recipe  ***
