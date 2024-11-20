@@ -7,7 +7,7 @@ body {
 	width: 100%;
 	color: $global-color;
 	background-color: $bg-color;
-	padding: 4.8rem 12.8rem;
+	padding: 12.8rem 4.8rem;
 
 	@include font-settings(1.6rem, normal, normal);
 	font-family: $font-family-outfit;
