@@ -42,7 +42,7 @@ body {
     padding: 0;
 
     &__content {
-      padding: 0 4rem; // Nastavíme padding len na sekcie
+      padding: 0 4rem;
     }
   }
 
@@ -78,7 +78,7 @@ body {
 
     letter-spacing: 0.1rem;
 
-    @media (max-width: 450px) {
+    @media (max-width: 650px) {
       @include font-settings(3rem);
     }
   }

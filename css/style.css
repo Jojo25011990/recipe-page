@@ -154,7 +154,7 @@ body {
   font-family: "Young Serif", serif;
   letter-spacing: 0.1rem;
 }
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   .recipe__title {
     font-size: 3rem;
     font-weight: normal;

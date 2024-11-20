@@ -4,15 +4,15 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## Table of contents
 
--   [Overview](#overview)
-    -   [The challenge](#the-challenge)
-    -   [Screenshot](#screenshot)
-    -   [Links](#links)
--   [My process](#my-process)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
 
-    -   [Built with](#built-with)
+  - [Built with](#built-with)
 
--   [Author](#author)
+- [Author](#author)
 
 ## Overview
 
@@ -22,19 +22,19 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
--   Solution URL: [https://github.com/Jojo25011990](https://github.com/Jojo25011990/recipe-page)
--   Live Site URL: [github-pages](https://jojo25011990.github.io/recipe-page/)
+- Solution URL: [https://github.com/Jojo25011990](https://github.com/Jojo25011990/recipe-page)
+- Live Site URL: [github-pages](https://jojo25011990.github.io/recipe-page/)
 
 ## My process
 
 ### Built with
 
--   Semantic HTML5 markup
--   SCSS (BEM)
--   Flexbox
--   Desktop-first workflow
+- Semantic HTML5 markup
+- SCSS (BEM)
+- Flexbox
+- Desktop-first workflow
 
 ## Author
 
--   Frontend Mentor - [Jojo25011990](https://www.frontendmentor.io/profile/Jojo25011990)
--   Instagram - [web.animations.and.effects](https://www.instagram.com/web.animations.and.effects/)
+- Frontend Mentor - [Jojo25011990](https://www.frontendmentor.io/profile/Jojo25011990)
+- Instagram - [web.animations.and.effects](https://www.instagram.com/web.animations.and.effects/)
